@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+
+    <script>
+     var car={
+        name:"Nissan",
+        model:"400A",
+        color:"Black",
+        start:function(){
+            return this.name+" "+this.model+" çalışturuldı";
+        },
+        drive:function(){
+            return this.name+" "+this.model+" kullanılıyor";
+        },
+        brake:function(){
+            return this.name+" "+this.model+" frene basıldı";
+        },
+        stop:function(){
+            return this.name+" "+this.model+" durduruldu";
+        }
+    };
+/*         document.getElementById("result").innerHTML=car.start()+"<br>"+
+        car.drive()+"<br>"+
+        car.brake()+"<br>"+
+        car.stop()+"<br>"; */
+
+/*      var x=new String();
+        var y=new Number();
+        var z=new Boolean();   bu şekilde değişkenleri nesnelere çevirmek karmaşıklığa ve progrmaın yavaşlamasına neden olur.*/
+        document.getElementById("result").innerHTML=car.name;
+    </script>
+</body>
+</html>
