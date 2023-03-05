@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinası</title>
+</head>
+
+<body>
+    <div>
+        <input id="t" style="width: 100px;" type="text" value="">
+    </div>
+    <div>
+        <br>
+        <input type="button" value="1" onclick="GetNumber(this.value);">
+        <input type="button" value="2" onclick="GetNumber(this.value);">
+        <input type="button" value="3" onclick="GetNumber(this.value);">
+        <input type="button" value="+" onclick="Sum();">
+    </div>
+    <div>
+        <br>
+        <input type="button" value="4" onclick="GetNumber(this.value);">
+        <input type="button" value="5" onclick="GetNumber(this.value);">
+        <input type="button" value="6" onclick="GetNumber(this.value);">
+        <input type="button" value="-" onclick="">
+    </div>
+
+    <div>
+        <br>
+        <input type="button" value="7" onclick="GetNumber(this.value);">
+        <input type="button" value="8" onclick="GetNumber(this.value);">
+        <input type="button" value="9" onclick="GetNumber(this.value);">
+        <input type="button" value="*" onclick="">
+    </div>
+    <div>
+        <br>
+        <input type="button" value="0" onclick="GetNumber(this.value);">
+        <input type="button" value="=" onclick="">
+        <input type="button" value="C" onclick="">
+        <input type="button" value="/" onclick="">
+    </div>
+
+
+    <script>
+        function GetNumber(number) {
+            document.getElementById("t").value = document.getElementById("t").value + number;
+        }
+
+        function Sum() {
+            var number1 = document.getElementById("t").value;
+            document.getElementById("t").value = "";
+        }
+    </script>
+
+</body>
+
+</html>

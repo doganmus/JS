@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğan MUŞ | Javascript Dersleri</title>
+    <script src="JS/message.js">
+        //harici komut dosyaları head veya body içersine yazılabilir.
+    </script>
+    <script>
+        //HTML içinde birden çok script bloğu açılarak istenilen kadar JS kod bloğu yazılabilir.
+        //document.write("İlk javascript kodlarım");
+        //document bulunulan belge demektir. Yani burada Lesson1.html i temsil eder.
+        //alert('Dünyayı daha iyi yapmayan insan insan değildir.');
+        //alert ekrana mesaj verir.
+        /*kodları head içerisine yazılırsa yukarıdan aşağıdaya derleme yapıldığı için henüz oluşmayan idlere JS kodunu uygulamayamaz.
+        bu nedenle script kodları body tagının en altına yazılmalaıdır.*/
+    </script>
+</head>
+
+<body>
+    <noscript>Tarayıcınızda javascript kapalı durumda. Bu yüzden sitemizin bazı özelliklerinden yararlanamıyorsunuz. Javascript açık hale getirmeniz gerekmektedir.</noscript>
+    <!--noscript kodu tarayıcı da javascript dilinin çalışmasına izin verilip verilmediğini kontrol eden koddur.-->
+
+    <!-- <p id="result" class="test">Javascript HTML'e hükmedebilir</p> -->
+
+    <!-- <input type="button" value="Open Light" onclick="openLight();"> -->
+    <!-- <img src="img/off.png" alt="Light" id="Picture" width="90" height="150"> -->
+    <!-- <input type="button" value="Close Light" onclick="closeLight();"> -->
+    <!-- <h2 id="result" style="display: none;">Bu HTML elementinin css'ini değiştirdim. Ben javascriptim</h2> -->
+    <!-- <input type="button" value="Change Css" onclick="changeCss();"> -->
+
+    <!--<p id="result"></p>-->
+    <input type="button" value="Click" onclick="Call();">
+    <input type="button" value="Welcome" onclick="Welcome();">
+    <input type="button" value="GoodBye" onclick="GoodBye();">
+    <!--<p id="result2"></p>-->
+    <script>
+        //JS kodları body tagı içerisinde body kapanmadan hemen önce çalıştırılırsa siteler daha hızlı açılır.
+        /* function Call() {
+             //JS fonksiyonları bir JS kod bloğunu çağırır. Her fonksiyon bir görev verilmelidir.
+             document.getElementById('result').innerHTML = "Javascript ne kadar canlı";
+             document.getElementById('result2').innerHTML = "Javascript kolay bir dil imiş";
+         }*/
+
+
+
+
+
+
+        /*function changeCss() {
+            document.getElementById('result').style.color = "red";
+            document.getElementById('result').style.fontSize = "48px";
+            document.getElementById('result').style.display = "block";
+        }*/
+
+        /*function openLight() {
+             document.getElementById('Picture').src = "img/on.png"
+         }
+
+         function closeLight() {
+             document.getElementById('Picture').src = "img/off.png"
+         }*/
+
+
+        /*
+        function Proccess() {
+            document.getElementById('result').innerHTML = 'Javascript içeriğe ulaştı ve değiştirdi. Nasıl ama?';
+            //eventları fonksiyonlar ile yapılmalıdır.
+        }*/
+        //document.write("document erişim=" + document.getElementById('result').innerHTML);
+        //getElementById paragrafa belirtilen id ile paragrafa erişim için kullanılır.
+        //innerHTML, getElementById ile erişilen paragrafın HTML içeriğine erişmeye yarar. innerHTML kullanılmaz ise paragraf elementine object olarak erişim sağlanır.
+    </script>
+
+    <!--Aşağıdaki örnekteki gibi bir sunucudaki JS dosyasınıda çekerek kullanabiliriz.-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

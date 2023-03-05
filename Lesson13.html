@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğan MUŞ | Javascript Dersleri</title>
+</head>
+
+<body>
+    <div id="result"></div>
+    <div id="result2"></div>
+
+    <script>
+        var x, y, z, sum, sub, multi, Div, mod, txt1, txtresult;
+
+        x = 8;
+        y = 6;
+        sum = 4 * (2 / 2) + 2 - 1;
+        if (!(x < y)) {
+            document.getElementById('result').innerHTML = "Koşul sağlandı";
+        } else {
+            document.getElementById('result').innerHTML = "Koşul sağlanamadı";
+        }
+        document.getElementById('result2').innerHTML = typeof y; //typeof bir değişkenin türünü döndürür.
+        document.getElementById('result2').innerHTML = sum; //işlem önceliği matematikdeki gibidr.
+    </script>
+</body>
+
+</html>
