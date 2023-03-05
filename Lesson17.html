@@ -1,22 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div id="result"></div>
-    <button type="button" onclick="">Hesapla</button>
-    <script>
-        Show();
 
-        function Show(){
-            window.alert("Kimse beni çağırmadı");
+<body>
+<!--     <div id="result"></div> -->
+<!--     <button type="button" onclick="sum(5,2);Multi(5,2)">Hesapla</button> -->
+<p id="result"></p>
+    
+    <script>
+
+/*         function sum(par1, par2) {
+                        var x, y, z;
+                        x = 2;
+                        y = 3;
+                        z = (x + y) * 4;
+                        document.getElementById('result').innerHTML = "Sonuç: " + z; 
+
+             alert(par1+par2);
+
+            return document.write ( par1 + par2 +"<br>" );
+
         }
 
-        document.getElementById('result').innerHTML="";
+        function Multi(par1, par2) {
+            return document.write(par1 * par2);
+        }
+         
+                sum(5,2);
+                sum(10,32); 
+        //document.getElementById('result').innerHTML =sum(5,2)*2;
+        //document.write(sum(5, 15) / 2);
+
+        function toCelcius(x){
+            return (5/9)*(x-32);
+        }
+
+        function getName(name, surname){
+            return name +" "+surname;
+        } */
+
+        function sum(data1, data2){
+            return data1+data2;
+        }
+        function Calculate(pr1,pr2){
+            return sum(pr1,pr2)*sum(pr1,pr2);
+        }
+
+        function printScreen(par){
+            document.getElementById("result").innerHTML=par;
+        }
+
+        printScreen(Calculate(4,5));
+        /* var getNumber=Calculate(4,5);
+        document.write(getNumber); */
     </script>
 </body>
+
 </html>
