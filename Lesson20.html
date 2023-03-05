@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Eğitim</title>
+</head>
+
+<body>
+    <p id="result"></p>
+
+    <script>
+        var scope = "React JS"; //Global Değişken
+        Scope();
+        Test();
+        function Scope() {
+            //var name = "Node JS";
+            name = "Node JS" // değişkenler var ile bildirim yapılmadan tanımlanırsa Global değişken olarak tanımlanmış sayıılır.
+            //alert(scope); 
+            //fonksiyonlar içinde tanımlanan değiştkenler localdir. Fonnksiton tamamlandığında ramden silinir.
+        }
+
+        function Test() {
+            var name = "Angular JS";
+            //document.write(scope); //global değişkenlere fonksiyon içinde ulaşılır.
+            //fonksiyonlara tanımlanan parametreler local değişkendir.
+        }
+        document.getElementById("result").innerHTML = name;
+    </script>
+</body>
+
+</html>
