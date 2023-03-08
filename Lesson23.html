@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="result"></p>
+
+    <script>
+        printScreen();
+
+        function printScreen() {
+            var text = "Javascript Angular JS, React JS, Vue JS, Node JS";
+            var x = new String("Javascript");
+            //document.getElementById('result').innerHTML = text.lastIndexOf("JS", 21);
+            //nesneler karşılaştırılamaz
+            //indexOF istenilenin string içinde ilk başlaığı yeri verir.
+            //lastIndexOf en son başldığı yeri verir.
+            //strin bulunamaz is -1 döner.
+            //başlangıç parametresi alabilir.
+            //document.getElementById('result').innerHTML = text.slice(10, 21);
+            //document.getElementById('result').innerHTML = text.substring(10, 50);
+            //document.getElementById('result').innerHTML = text.substr(-2, 7);
+            document.getElementById('result').innerHTML = text.replace("JavaScript", "Değişti");
+            //replace deafault olarak 1 adet değişiklik yapar. Büyük küçük harf duyarlıdır.
+        }
+    </script>
+</body>
+
+</html>
