@@ -10,13 +10,15 @@
 
 <body>
     <p id="result"></p>
+    <p id="result1"></p>
+    <p id="result2"></p>
 
     <script>
         printScreen();
 
         function printScreen() {
-            var text = "Javascript Angular JS, React JS, Vue JS, Node JS";
-            var x = new String("Javascript");
+            //var text = "Javascript Angular JS, React JS, Vue JS, Node JS";
+            //var x = new String("Javascript");
             //document.getElementById('result').innerHTML = text.lastIndexOf("JS", 21);
             //nesneler karşılaştırılamaz
             //indexOF istenilenin string içinde ilk başlaığı yeri verir.
@@ -26,8 +28,14 @@
             //document.getElementById('result').innerHTML = text.slice(10, 21);
             //document.getElementById('result').innerHTML = text.substring(10, 50);
             //document.getElementById('result').innerHTML = text.substr(-2, 7);
-            document.getElementById('result').innerHTML = text.replace("JavaScript", "Değişti");
+            //document.getElementById('result').innerHTML = text.replace(/js/ig, "Değişti "); // replace de /metin/ i büyük küçük dikkate alma, g hepsini değiştir demektir.
             //replace deafault olarak 1 adet değişiklik yapar. Büyük küçük harf duyarlıdır.
+            //document.getElementById('result').innerHTML = text.toUpperCase(text); //toLowerCase hepsi küçük, toUpperCase hepsi büyük
+            var orderNo = "52+FAT-2023-XX-253+023";
+            var orderNoList = orderNo.split("+");
+            document.getElementById('result').innerHTML = orderNoList[0];
+            document.getElementById('result1').innerHTML = orderNoList[1];
+            document.getElementById('result2').innerHTML = orderNoList[2];
         }
     </script>
 </body>
