@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <p id="result"></p>
+    <!--     <input type="text" name="Number" id="Num" placeholder="Sadece sayı giriniz!">
+    <button type="submit" onclick="printScreen();">Click</button> -->
+    <script>
+        printScreen();
+
+        function printScreen() {
+            var x = 2;
+            var text = "";
+            //olası en büyük sayı dışında sayı hesaplarsanız infinity -sonsuz değeri döndürür.
+            while (x != Infinity) {
+                x *= x;
+                text += x + "<br>";
+            }
+
+            document.getElementById('result').innerHTML = text;
+            /*             var number = document.getElementById('Num').value;
+                        if (isNaN(number)) {
+                            document.getElementById('result').innerHTML = "Lütfen sadece sayı giriniz";
+                        } else {
+                            document.getElementById('result').innerHTML = "Tebrikler girdiğiniz sayı: " + number;
+                        }
+             */
+            // NaN ile herhangi bir artimetik işlem yaparsanız sonuç NaN dır. NaN tipi number dır.
+
+            /*var x = 7; //number, javascript de sadece number sayısal veri tipi var.
+            var e = 3;
+            var y = 3.14; //number
+            var a = 12e5; // = 1200000 12 10 üzeri 5
+            var b = 12e-5 //  = 0.00012 12 10 üzeri -5
+            var z = 999999999999999; //sayılar max 15 hanelidir.
+
+            var sum2 = x + e;
+
+            var c = 0.01 * 100;
+            var d = 0.02 * 100;
+            var sum = (c + d) / 100; //JS de ondaliklı sayıların artimetik işlemleri %100 doğru değildir. 0.30000000000000004
+            //JS ondalıklı sayılar tam sayıya çevrildikten sonra aritmetik işlem yapılır.*/
+
+            //document.getElementById("result").innerHTML = "sonuç: " + x + e; JS sayısal işlemlerden önce string ile birleştirilirse stirng birleştirme yapar. sonraki gelen aritmetik işlemlere de string birleştirme uygular.
+
+
+
+            /*             var x = "7 JS";
+                        var e = 3;
+
+                        var mult = x * e; */
+            //sonucu 21 dir.JS tüm aritmetik işlemlerde stringleri sayısala çevirmeye çalışacaktır.Toplama hariç 
+            //isNaN, değişkenin sayı mı, string mi olduğunu kontrol eder.
+
+            //document.getElementById("result").innerHTML = isNaN(x);
+        }
+    </script>
+
+</body>
+
+</html>
