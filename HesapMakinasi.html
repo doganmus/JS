@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hesap Makinası</title>
+    <title>Hesap Makinesi</title>
 </head>
 
 <body>
     <div>
-        <input id="t" style="width: 100px;" type="text" value="">
+        <input id="t" style="width: 100px;" type="text" value="" autofocus>
     </div>
     <div>
         <br>
-        <input type="button" value="1" onclick="GetNumber(this.value);">
-        <input type="button" value="2" onclick="GetNumber(this.value);">
+        <input type="button" value="1" onclick="Sum(this.value);">
+        <input type="button" value="2" onclick="Sum(this.value);">
         <input type="button" value="3" onclick="GetNumber(this.value);">
         <input type="button" value="+" onclick="Sum();">
     </div>
@@ -42,17 +42,17 @@
         <input type="button" value="/" onclick="">
     </div>
 
-
+    <p id="1"></p>
     <script>
-        function GetNumber(number) {
-            document.getElementById("t").value = document.getElementById("t").value + number;
-        }
-
-        function Sum() {
-            var number1 = document.getElementById("t").value;
-            document.getElementById("t").value = "";
+        function Sum(data) {
+            var a = data;
+            var b = 0;
+            a += b;
+            document.getElementById('1').innerHTML = a;
         }
     </script>
+
+
 
 </body>
 
