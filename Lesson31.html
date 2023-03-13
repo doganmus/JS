@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DateTime</title>
+</head>
+
+<body>
+    <p id="result"></p>
+
+    <script>
+        var ms = Date.parse("January 2 1970");
+        var d = new Date();
+        /*         d.setDate("23");
+                d.setHours("13");
+                d.setFullYear("2018");
+        d.setMinutes("10");
+         var days = ["Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"] */
+        document.getElementById("result").innerHTML = d.getUTCDate();
+    </script>
+</body>
+
+</html>
